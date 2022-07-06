@@ -1,4 +1,4 @@
 select COUNT(`id`) AS `iscritti`,YEAR(`enrolment_date`) AS `anno_iscrizione` FROM `students` GROUP BY YEAR(`enrolment_date`)
 SELECT COUNT(`id`),`office_address` FROM `teachers` GROUP BY `office_address`
-SELECT AVG(`vote`) FROM `exam_student` GROUP BY `exam_id` //da rivedere//
-SELECT COUNT(`id`),`department_id` FROM `degrees` GROUP BY `department_id` //da rivedere//
+SELECT AVG(`vote`),`exam_id` FROM `exam_student` GROUP BY `exam_id` //CORRETTA//
+SELECT COUNT(`id`),`department_id` FROM `degrees` GROUP BY `department_id` //da rivedere// era corretto
